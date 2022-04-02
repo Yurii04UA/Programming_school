@@ -79,6 +79,7 @@ a {
 
 .nav_list{
    display: flex;
+   align-items: center;
 }
 .nav_list_item{
    display: block;
@@ -102,5 +103,14 @@ a {
 }
 .item_icon{
    margin-right: 5px;
+}
+.nav_list_item_link{
+   padding: 5px 10px;
+   border-radius: 15px;
+   transition: all .3s ease;
+}
+.nav_list_item_link:hover{
+   border: 1px solid teal;
+   color: teal;
 }
 
