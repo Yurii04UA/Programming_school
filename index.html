@@ -6,55 +6,80 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./style/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Press+Start+2P&display=swap"
+      rel="stylesheet">
    <title>Programming academy</title>
 </head>
 
 <body>
-   <header class="header container">
-      <nav class="header_nav">
-         <div class="nav_left">
-            <img src="./images/PyPt.png" alt="logo" class="logo">
-            <ul class="nav_list">
-               <li class="nav_list_item">
-                  <a href="#" class="nav_list_item_link">What will you learn</a>
-               </li>
-               <li class="nav_list_item">
-                  <a href="#" class="nav_list_item_link">Learing process</a>
-               </li>
-               <li class="nav_list_item">
-                  <a href="#" class="nav_list_item_link">Cost of education</a>
-               </li>
-               <li class="nav_list_item">
-                  <a href="#" class="nav_list_item_link">Contacts</a>
-               </li>
-            </ul>
-         </div>
-         <div class="nav_right">
-            <ul class="nav_list">
-               <a href="#" class="nav_list_item_link link_mar">
+   <div class="wrapper">
+      <header class="header container">
+         <nav class="header_nav">
+            <div class="nav_left">
+               <img src="./images/PyPt.png" alt="logo" class="logo">
+               <ul class="nav_list">
                   <li class="nav_list_item">
-                     <img src="./images/sign_in.png" alt="icon" class="item_icon">
-                     <p>Sign in</p>
+                     <a href="#" class="nav_list_item_link">What will you learn</a>
                   </li>
-               </a>
-               <a href="#" class="nav_list_item_link ">
                   <li class="nav_list_item">
-                     <img src="./images/registration.png" alt="icon" class="item_icon">
-                     <p>Registration</p>
+                     <a href="#" class="nav_list_item_link">Learing process</a>
                   </li>
-               </a>
-            </ul>
-         </div>
-      </nav>
-   </header>
-   <section class="info_section">
-      <div class="info_left">
-         
-      </div>
-      <div class="info_right">
+                  <li class="nav_list_item">
+                     <a href="#" class="nav_list_item_link">Cost of education</a>
+                  </li>
+                  <li class="nav_list_item">
+                     <a href="#" class="nav_list_item_link">Contacts</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="nav_right">
+               <ul class="nav_list">
+                  <a href="#" class="nav_list_item_link link_mar">
+                     <li class="nav_list_item">
+                        <img src="./images/sign_in.png" alt="icon" class="item_icon">
+                        <p>Sign in</p>
+                     </li>
+                  </a>
+                  <a href="#" class="nav_list_item_link ">
+                     <li class="nav_list_item">
+                        <img src="./images/registration.png" alt="icon" class="item_icon">
+                        <p>Registration</p>
+                     </li>
+                  </a>
+               </ul>
+            </div>
+         </nav>
+      </header>
 
-      </div>
-   </section>
+      <section class="info_section container">
+         <div class="info_box">
+            <div class="info_left">
+               <h1 class="info_title">
+                  Programming <span class="academy">{</span> academy <span class="academy">}</span> for those who need
+                  real
+                  skills, not just a certificate
+               </h1>
+               <p class="info_text">
+                  Take the test to get access to free introductory lessons
+               </p>
+               <a href="#" class="btn btn_test">
+                  pass the test
+                  <img src="./images/arrow.png" alt="arrow" class="arrow">
+               </a>
+            </div>
+            <div class="info_right">
+               <img src="./images/info_section_img.png" alt="images" class="info_section_img">
+            </div>
+         </div>
+         <div class="circle">
+            <img src="./images/arrow.png" alt="arrow" class="arrow_down">
+         </div>
+   
+      </section>
+   </div>
+
 
    <script src="./js/index.js"></script>
 </body>
