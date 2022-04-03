@@ -50,7 +50,7 @@ a {
    width: 100%;
    margin: 0 auto;
    padding: 0 120px;
-   color: #000;
+   color: #22253B;
 
 }
 
@@ -366,6 +366,7 @@ a {
 
 .video_player{
    position: relative;
+   margin-bottom: 30px;
 }
 .btn_play{
    position: absolute;
@@ -388,3 +389,43 @@ a {
    margin-bottom: 30px;
 }
 
+.learning_process_cards{
+   display: flex;
+   background-color: #fff;
+   border-radius: 30px;
+   margin-bottom: 20px;
+}
+.learning_process_cards_item{
+   display: flex;
+   flex-direction: column;
+   
+   padding: 40px;
+}
+.learning_process_cards_item:not(:last-child){
+   border-right: 1px solid rgba(128, 128, 128, 0.247);
+}
+
+.process_numb{
+   font-size: 80px;
+   font-weight: 700;
+   color: teal;
+}
+
+.process_title{
+   margin-bottom: 10px;
+}
+
+.btn_box{
+   max-width: 500px;
+   margin: 0 auto;
+   padding: 10px;
+   border-radius: 100px;
+   background-color: #fff;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.learning_process_footer_text{
+   max-width: 280px;
+}
