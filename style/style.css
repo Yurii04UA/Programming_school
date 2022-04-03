@@ -241,7 +241,7 @@ a {
    margin-bottom: 100px;
 }
 
-.technologies_title {
+.technologies_title, .learn_title {
    text-align: center;
    font-size: 30px;
    margin-bottom: 50px;
@@ -306,5 +306,46 @@ a {
 
 .technologies_text{
    margin-top: 15px;
-   max-width: 400px;
+   padding-top: 10px;
+   max-width: 340px;
+   border-top: 1px solid grey;
+}
+
+/* ////// learn_section */
+.learn_section{
+   margin-bottom: 80px;
+}
+.learn_cards{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+
+}
+.learn_cards_item{
+   max-width: 300px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 50px 20px 20px 20px;
+
+   border-radius: 40px;
+   background-color: #EAF2F5;
+   margin-top: 30px;
+}
+.learn_cards_item:not(:last-child){
+   
+}
+
+.learn_cards_img{
+   margin-bottom: 20px;
+}
+
+.learn_cards_title{
+   font-size: 16px;
+   margin-bottom: 15px;
+   text-align: center;
+}
+.learn_card_text{
+   text-align: center;
 }
