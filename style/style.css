@@ -63,6 +63,7 @@ a {
    margin: 0 auto;
    color: #000;
 
+   border-radius: 30px;
 }
 
 .btn {
@@ -241,10 +242,10 @@ a {
    margin-bottom: 100px;
 }
 
-.technologies_title, .learn_title {
+.technologies_title, .learn_title,.learning_process_title {
    text-align: center;
    font-size: 30px;
-   margin-bottom: 50px;
+   margin-bottom: 30px;
 }
 
 .technologies_img {
@@ -333,9 +334,6 @@ a {
    background-color: #EAF2F5;
    margin-top: 30px;
 }
-.learn_cards_item:not(:last-child){
-   
-}
 
 .learn_cards_img{
    margin-bottom: 20px;
@@ -349,3 +347,44 @@ a {
 .learn_card_text{
    text-align: center;
 }
+
+/* ////// learning_process_section */
+.learning_process_section{
+   padding-top: 50px;
+   padding-bottom: 80px;
+}
+
+.learning_process_text{
+   max-width: 600px;
+}
+
+.learning_process_header{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.video_player{
+   position: relative;
+}
+.btn_play{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   transition: all .5s ease;
+   animation: puls 1.2s linear infinite;
+   cursor: pointer;
+}
+
+@keyframes puls {
+   from {
+     opacity: 0.3;
+   }
+}
+
+.learning_process_text{
+   text-align: center;
+   margin-bottom: 30px;
+}
+
