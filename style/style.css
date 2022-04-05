@@ -514,8 +514,17 @@ a {
 .prices_block:nth-child(even){
    background-color: #F3F3F3;
 }
+.prices_block:last-child{
+   font-size: 18px;
+   color: black;
+   font-weight: 700;
+}
 .prices_block p{
    padding: 15px; 
+}
+.price_notes{
+   padding: 20px 40px;
+   color: gray;
 }
 
 /* /// footer */
