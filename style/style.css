@@ -24,7 +24,9 @@ form {
    padding: 0;
    box-sizing: border-box;
 }
-
+h2{
+   font-size: 30px;
+}
 ul,
 li {
    margin: 0;
@@ -242,7 +244,7 @@ a {
    margin-bottom: 100px;
 }
 
-.technologies_title, .learn_title,.learning_process_title {
+.technologies_title, .learn_title,.learning_process_title,.price_header_title {
    text-align: center;
    font-size: 30px;
    margin-bottom: 30px;
@@ -470,7 +472,50 @@ a {
 
 /* //// price section */
 .price_section{
-   height: 300px;
+   padding-top: 50px;
+   padding-bottom: 80px;
+}
+.price_header_box{
+   display: flex;
+   column-gap: 25px;
+   margin-bottom: 40px;
+}
+.price_header_box_item{
+   display: flex;
+   align-items: center;
+}
+.price_header_img{
+   width: 61px;
+   height: 61px;
+   margin-right: 20px;
+}
+.price_header_text{
+   font-size: 14px;
+}
+
+.prices_box{
+   background-color: #fff;
+   border-radius: 25px;
+   padding: 40px;
+}
+
+.prices_block{
+   display: grid;
+   grid-template-columns: 1.5fr 1fr 1fr;
+  
+   border-radius: 10px;
+}
+
+.prices_block:first-child{
+   font-size: 15px;
+   color: teal;
+   font-weight: 700;
+}
+.prices_block:nth-child(even){
+   background-color: #F3F3F3;
+}
+.prices_block p{
+   padding: 15px; 
 }
 
 /* /// footer */
