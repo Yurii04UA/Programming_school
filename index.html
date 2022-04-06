@@ -13,7 +13,7 @@
    <title>Programming academy</title>
 </head>
 
-<body>
+<body class="over">
    <div class="wrapper">
       <header class="header container">
          <nav class="header_nav">
@@ -21,22 +21,22 @@
                <img src="./images/PyPt.png" alt="logo" class="logo">
                <ul class="nav_list">
                   <li class="nav_list_item">
-                     <a href="#" class="nav_list_item_link">What will you learn</a>
+                     <a href="#learn" class="nav_list_item_link">What will you learn</a>
                   </li>
                   <li class="nav_list_item">
-                     <a href="#" class="nav_list_item_link">Learing process</a>
+                     <a href="#process" class="nav_list_item_link">Learing process</a>
                   </li>
                   <li class="nav_list_item">
-                     <a href="#" class="nav_list_item_link">Cost of education</a>
+                     <a href="#cost" class="nav_list_item_link">Cost of education</a>
                   </li>
                   <li class="nav_list_item">
-                     <a href="#" class="nav_list_item_link">Contacts</a>
+                     <a href="#contacts" class="nav_list_item_link">Contacts</a>
                   </li>
                </ul>
             </div>
             <div class="nav_right">
                <ul class="nav_list">
-                  <a href="#" class="nav_list_item_link link_mar">
+                  <a href="#" class="nav_list_item_link link_mar" id="login">
                      <li class="nav_list_item">
                         <img src="./images/sign_in.png" alt="icon" class="item_icon">
                         <p>Sign in</p>
@@ -52,7 +52,15 @@
             </div>
          </nav>
       </header>
-
+      <!-- <Modal windows> -->
+         <div class="login">
+            <a href="#" class="close">X</a>
+            <div class="login_box">
+               <h1>Hello</h1>
+               <p>Sign in to PyPt or <a href="#" >create an account</a></p>
+            </div>
+         </div>
+      <!-- </Modal windows> -->
       <section class="info_section container">
          <div class="info_box">
             <div class="info_left">
@@ -79,7 +87,7 @@
 
       </section>
    </div>
-   <section class="technologies_section container">
+   <section class="technologies_section container" id="learn">
       <h2 class="technologies_title">
          What programming technologies will you learn?
 
@@ -105,7 +113,7 @@
          </div>
       </div>
    </section>
-   <section class="learn_section container">
+   <section class="learn_section container" id="process">
       <h2 class="learn_title">
          Learning at PyPt is convenient and efficient
       </h2>
@@ -115,8 +123,7 @@
          <div class="learn_cards_item">
             <img src="./images/learn_icon1.png" alt="icon" class="learn_cards_img">
             <h3 class="learn_cards_title">
-               Huge amount of practice
-            </h3>
+               Huge amount of practice</h3>
             <p class="learn_card_text">
                Over 500 independent tasks and 20 full-fledged large projects
             </p>
@@ -281,7 +288,7 @@
       </div>
    </div>
    <div class="wrapper">
-      <section class="price_section container">
+      <section class="price_section container" id="cost">
          <div class="price_header">
             <h2 class="price_header_title">
                Cost of education
@@ -310,7 +317,7 @@
                </div>
             </div>
          </div>
-         <div class="price_main">
+         <div class="price_main" >
             <div class="prices_box">
                <div class="prices_block">
                   <p>Section</p>
@@ -375,7 +382,7 @@
             </a>
          </div>
       </section>
-      <footer class="footer container">
+      <footer class="footer container" id="contacts">
          <div class="footer_box">
             <div class="footer_box_left">
                <div class="footer_logo">
@@ -416,6 +423,7 @@
             <div class="footer_box_right">
                <p>+800-27-27-00</p>
                <p>company@pypt.com</p>
+               <p>18 Beulah Road, Norwoods SA 5061, USA.</p>
             </div>
          </div>
          <div class="footer_col">

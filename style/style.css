@@ -3,10 +3,13 @@ body {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+   scroll-behavior: smooth;
 
    font-family: 'Montserrat', sans-serif;
 }
-
+html {
+   scroll-behavior: smooth;
+   }
 h1,
 h2,
 h3,
@@ -585,4 +588,60 @@ a {
 }
 .footer_box_main ul li:not(:last-child){
    margin-bottom: 20px;
+}
+.footer_box_right p{
+   margin-bottom: 20px;
+}
+
+
+/* //// modal windows */
+
+.login{
+   position: fixed;
+   top: 0;
+   right: 0;
+   left: 0;
+   bottom: 0;
+
+   max-width: 1425px;
+   
+   width: 100%;
+   height: 100vh;
+   margin: 0 auto;
+   padding:120px;
+   z-index: 2;
+   border-radius: 25px;
+
+   transform: translateX(150%);
+   transition: all 0.3s ease-in;
+   opacity: 0;
+   
+   backdrop-filter: blur(25px);
+
+
+}
+.over.hidden{
+   overflow: hidden;
+
+}
+
+.login.show_modal{
+   opacity: 1;
+   transform: translateX(0);
+}
+
+.close{
+   display: block;
+   text-align: end;
+   font-size: 32px;
+}
+
+.circle.show_modal{
+   display: none;
+}
+
+.login_box{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
