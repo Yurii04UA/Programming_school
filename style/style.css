@@ -554,3 +554,35 @@ a {
    color: grey;
    border-top: 1px solid rgba(128, 128, 128, 0.432);
 }
+
+.footer_box{
+   display: grid;
+   grid-template-columns: 2.5fr 1fr 1fr;
+   align-items: center;
+   margin-bottom: 50px;
+   border-radius: 25px;
+   padding: 20px;
+   background-color: white;
+}
+
+.footer_logo{
+   display: flex;
+   align-items: center;
+   margin-bottom: 15px;
+}
+.footer_logo img{
+   margin-right: 15px;
+}
+.footer_logo p{
+   max-width: 150px;
+}
+.footer_box_left_social a:not(:last-child){
+   margin-right: 10px;
+}
+
+.footer_box_main ul li{
+   display: block;
+}
+.footer_box_main ul li:not(:last-child){
+   margin-bottom: 20px;
+}
