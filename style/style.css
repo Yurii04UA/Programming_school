@@ -526,8 +526,31 @@ a {
    padding: 20px 40px;
    color: gray;
 }
+.price_info{
+   padding: 60px 50px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   border-radius: 25px;
+   background-color: #EAF2F5;
+   
+}
+.price_info a{
+   max-width: 300px;
+   width: 100%;
+   line-height: 32px;
+   font-size: 20px;
+}
+.price_info_text{
+   max-width: 600px;
+}
 
 /* /// footer */
-.footer{
-   height: 300px;
+.footer_col{
+   display: grid;
+   grid-template-columns: 2.5fr 1fr 1fr;
+   padding: 25px 0;
+   color: grey;
+   border-top: 1px solid rgba(128, 128, 128, 0.432);
 }
