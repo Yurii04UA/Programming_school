@@ -703,7 +703,13 @@ a {
    padding: 10px;
    margin-bottom: 15px;
    background-color: white;
+
+   transition: all .3s ease;
 }
+.btn_connect:hover{
+   background-color: rgba(165, 42, 42, 0.1);
+}
+
 .btn_connect img{
    margin-right: 30px;
    text-align: center;
