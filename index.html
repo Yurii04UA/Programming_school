@@ -42,7 +42,7 @@
                         <p>Sign in</p>
                      </li>
                   </a>
-                  <a href="#" class="nav_list_item_link ">
+                  <a href="#" class="nav_list_item_link reg">
                      <li class="nav_list_item">
                         <img src="./images/registration.png" alt="icon" class="item_icon">
                         <p>Registration</p>
@@ -57,7 +57,24 @@
             <a href="#" class="close">X</a>
             <div class="login_box">
                <h1>Hello</h1>
-               <p>Sign in to PyPt or <a href="#" >create an account</a></p>
+               <p>Sign in to PyPt or <a class="reg" href="#" >create an account</a></p>
+               <form action="#">
+                  <input type="text" placeholder="Email or username">
+                  <input type="password" placeholder="Your password">
+               </form>
+               <a href="#" class="btn_login">Continue</a>
+               <p class="or">or</p>
+               <a href="#" class="btn_connect">
+                  <img src="./images/fb_reg.png" alt="icon_fb"> Continue with Facebook
+               </a>
+               <a href="#" class="btn_connect">
+                  <img src="./images/google.png" alt="icon_google"> Continue with Google
+               </a>
+               <div class="check">
+                  <input type="checkbox" id="checkbox">
+                  <label for="checkbox">Stay signed in</label>
+                  <p>Using a public or shared device? Uncheck to protect your account.</p>
+               </div>
             </div>
          </div>
       <!-- </Modal windows> -->

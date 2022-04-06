@@ -645,3 +645,76 @@ a {
    flex-direction: column;
    align-items: center;
 }
+.login_box h1{
+   margin-bottom: 10px;
+}
+
+.login_box .reg{
+   color: blue;
+   text-decoration: underline;
+}
+.login_box form{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   max-width: 320px;
+   width: 100%;
+}
+.login_box form input{
+   margin-top: 20px;
+   padding: 15px 20px;
+   width: 100%;
+   border-radius: 5px;
+  
+}
+.login_box form input {
+   outline: none;
+   border: none;
+}
+
+.btn_login{
+   margin-top: 20px;
+   max-width: 320px;
+   width: 100%;
+   text-align: center;
+
+   padding: 10px ;
+   border-radius: 11px;
+   background-color: rgb(56, 56, 206);
+   color: #fff;
+   font-weight: 700;
+   transition: all .3s;
+}
+
+.btn_login:hover{
+   background-color: rgb(56, 56, 206,0.8);
+}
+
+.or{
+   margin: 20px 0px;
+}
+
+.btn_connect{
+   min-width: 320px;
+   display: flex;
+   align-items: center;
+   
+   border-radius: 11px;
+   padding: 10px;
+   margin-bottom: 15px;
+   background-color: white;
+}
+.btn_connect img{
+   margin-right: 30px;
+   text-align: center;
+}
+
+.check{
+   text-align: center;
+   font-size: 14px;
+}
+.check p{
+   margin-top: 5px;
+   max-width: 250px;
+   font-size: 12px;
+}
