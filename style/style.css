@@ -596,7 +596,7 @@ a {
 
 /* //// modal windows */
 
-.login,.registration{
+.login,.registration,.quiz{
    position: fixed;
    top: 0;
    right: 0;
@@ -633,6 +633,12 @@ a {
    opacity: 1;
    transform: translateX(0);
 }
+.quiz.show_modal{
+   opacity: 1;
+   transform: translateX(0);
+}
+
+
 
 .close_log, .close_reg{
    display: block;
