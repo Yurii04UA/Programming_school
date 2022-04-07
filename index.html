@@ -42,7 +42,7 @@
                         <p>Sign in</p>
                      </li>
                   </a>
-                  <a href="#" class="nav_list_item_link reg">
+                  <a href="#" class="nav_list_item_link reg" id="registration">
                      <li class="nav_list_item">
                         <img src="./images/registration.png" alt="icon" class="item_icon">
                         <p>Registration</p>
@@ -53,8 +53,9 @@
          </nav>
       </header>
       <!-- <Modal windows> -->
+         <!-- login -->
          <div class="login">
-            <a href="#" class="close">X</a>
+            <a href="#" class="close_log">X</a>
             <div class="login_box">
                <h1>Hello</h1>
                <p>Sign in to PyPt or <a class="reg" href="#" >create an account</a></p>
@@ -71,9 +72,37 @@
                   <img src="./images/google.png" alt="icon_google"> Continue with Google
                </a>
                <div class="check">
-                  <input type="checkbox" id="checkbox">
+                  <input type="checkbox" id="checkbox" checked>
                   <label for="checkbox">Stay signed in</label>
                   <p>Using a public or shared device? Uncheck to protect your account.</p>
+               </div>
+            </div>
+         </div>
+         <div class="registration">
+            <a href="#" class="close_reg">X</a>
+            <h1>Create an account</h1>
+            <div class="reg_box">
+               <div class="reg_box_left">
+                  <form action="#">
+                     <div class="name">
+                        <input type="text" placeholder="First name">
+                        <input type="text" placeholder="Last name">
+                     </div>
+                     <input type="email" placeholder="Password">
+                     <input type="password" placeholder="Email">
+                  </form>
+                  <p><span class="create">By Creating an account</span>, you agree to our <a href="#" class="link">User Agreement</a> and acknowledge reading our <a href="#" class="link">User Privacy Notice</a>.</p>
+                  <div class="btn_login">Create account </div>
+               </div>
+               
+               <p>or</p>
+               <div class="reg_box_right">
+                  <a href="#" class="btn_connect">
+                     <img src="./images/fb_reg.png" alt="icon_fb"> Continue with Facebook
+                  </a>
+                  <a href="#" class="btn_connect">
+                     <img src="./images/google.png" alt="icon_google"> Continue with Google
+                  </a>
                </div>
             </div>
          </div>
