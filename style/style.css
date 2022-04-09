@@ -797,8 +797,12 @@ a {
    max-width: 700px;
    width: 100%;
    margin: 0 auto;
-   border: 1px solid;
+   border-radius: 15px;
    padding: 50px;
+
+   background-color: rgba(65, 37, 190, 0.479);
+   box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.4);
+   color: white;
 }
 .quiz_qustions_li{
    list-style: none;
@@ -813,6 +817,12 @@ a {
 
 
 .quiz_qustions_item{
-   width: 100%;
-   
+   width: 100%; 
+}
+
+.quiz_controls{
+   text-align: center;
+}
+.btn_next, .btn_restart{
+   border: none;
 }
