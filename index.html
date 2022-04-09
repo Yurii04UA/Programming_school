@@ -13,7 +13,7 @@
    <title>Programming academy</title>
 </head>
 
-<body class="over">
+<body class="over hidden">
    <div class="wrapper">
       <header class="header container">
          <nav class="header_nav">
@@ -55,7 +55,7 @@
       <!-- <Modal windows> -->
          <!-- login -->
          <div class="login">
-            <a href="#" class="close_log close">X</a>
+            <a href="#" class="close">X</a>
             <div class="login_box">
                <h1>Hello</h1>
                <p>Sign in to PyPt or <a class="reg" href="#" id="registration" >create an account</a></p>
@@ -80,7 +80,7 @@
          </div>
          <!-- /// Registration -->
          <div class="registration">
-            <a href="#" class="close_reg close">X</a>
+            <a href="#" class="close">X</a>
             <h1>Create an account</h1>
             <div class="reg_box">
                <div class="reg_box_left">
@@ -108,8 +108,42 @@
             </div>
          </div>
          <!-- quiz -->
-         <div class="quiz">
-            <a href="#" class="close_quiz close">X</a>
+         <div class="quiz show_modal">
+            <div class="quiz_question_box">
+               <div class="quiz_qustions">
+                  <div class="quiz_qustions_item">
+                     <div class="quiz_qustions_item_qustion">Qustion 1</div>
+                     <ul>
+                        <li class="quiz_qustions_li">
+                           <label class="quiz_qustions_label">
+                              <input type="radio" name="q1"> asd
+                           </label>
+                        </li>
+                        <li class="quiz_qustions_li">
+                           <label class="quiz_qustions_label">
+                              <input type="radio" name="q1"> asd
+                           </label>
+                        </li>
+                        <li class="quiz_qustions_li">
+                           <label class="quiz_qustions_label">
+                              <input type="radio" name="q1"> asd
+                           </label>
+                        </li>
+                        <li class="quiz_qustions_li">
+                           <label class="quiz_qustions_label">
+                              <input type="radio" name="q1"> asd
+                           </label>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="quiz_indicator">1/5</div>
+               <div class="quiz_results"></div>
+               <div class="quiz_controls">
+                  <button href="#" class="btn btn_next"  disabled>next</button>
+                  <button href="#" class="btn btn_restart">restart</button>
+               </div>
+            </div>
          </div>
       <!-- </Modal windows> -->
       <section class="info_section container">

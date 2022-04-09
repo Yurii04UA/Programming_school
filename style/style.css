@@ -76,6 +76,7 @@ a {
    background-color: #F15525;
 
    max-width: 220px;
+   width: 100%;
    padding: 15px 25px;
    color: #fff;
    transition: all 0.4s;
@@ -637,10 +638,12 @@ a {
    opacity: 1;
    transform: translateX(0);
 }
+.quiz{
+   overflow: auto;
+}
 
 
-
-.close_log, .close_reg{
+.close{
    display: block;
    text-align: end;
    font-size: 32px;
@@ -786,5 +789,30 @@ a {
 .link{
    color: blue;
    text-decoration: underline;
+}
+
+/* modal quiz */
+
+.quiz_question_box{
+   max-width: 700px;
+   width: 100%;
+   margin: 0 auto;
+   border: 1px solid;
+   padding: 50px;
+}
+.quiz_qustions_li{
+   list-style: none;
+   line-height: 40px;
+   border: 1px solid;
+   padding: 0 15px;
+   
+}
+.quiz_qustions_label{
+  display:block;
+}
+
+
+.quiz_qustions_item{
+   width: 100%;
    
 }
