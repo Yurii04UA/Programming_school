@@ -813,6 +813,7 @@ a {
    border-radius: 10px;
    padding: 0 15px;
    margin-bottom: 10px;
+   transition: all .3s ease-in;
 
    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.2);
 }
@@ -821,12 +822,22 @@ a {
 }
 
 .quiz_qustions_label{
-  display:block;
+  display: flex;
+  align-items: center;
   line-height: 20px;
   padding: 10px;
 }
+.quiz_qustions_li:hover{
+   background-color: #f155254d;
+}
 
+.quiz_qustions_input{
+   margin-right: 10px;
+}
 
+.quiz_qustions_input:checked{
+   background-color: #F15525;
+}
 .quiz_qustions_item{
    width: 100%; 
 }
@@ -846,3 +857,4 @@ a {
 .quiz_indicator{
    padding: 15px;
 }
+

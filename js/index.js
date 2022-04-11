@@ -80,22 +80,22 @@ DATA = [
       answer:[
          {
             id: '5',
-            value: '<javascript>',
+            value: '"Head"',
             correct: false
          },
          {
             id: '6',
-            value: '<script>',
+            value: '"Body" ',
             correct: true
          },
          {
             id: '7',
-            value: '<js>',
+            value: '"Footer"',
             correct: false
          },
          {
             id: '8',
-            value: '<scripting>',
+            value: '"HTML"',
             correct: false
          },
       ]
@@ -176,3 +176,53 @@ DATA = [
       ]
    },
 ]
+
+
+
+
+const quizQustions= document.querySelector('.quiz_qustions');
+const quizQustionsItem= document.querySelector('.quiz_qustions_item');
+const quizIndicator= document.querySelector('.quiz_indicator');
+const quizControls= document.querySelector('.quiz_controls');
+const btnNext = document.querySelector('.btn_next');
+const quizResults= document.querySelector('.quiz_results');
+
+let results ={};
+let currentStep = 0
+
+
+const renderQustion = (index) => {
+   renderIndicator(index+1)
+   quizQustions.dataset.currentStep = index
+
+      const renderAnswer = () => {
+
+        return DATA[index].answer.map(answer =>
+           `<li class="quiz_qustions_li">
+            <label class="quiz_qustions_label">
+               <input class="quiz_qustions_input" type="radio" name=${index} value=${answer.id}>${answer.value}</label>
+            </li>`
+         ).join('')
+      }
+
+      quizQustionsItem.innerHTML = `
+         <div class="quiz_qustions_item_qustion">${DATA[index].question}</div>
+         <ul>${renderAnswer()}</ul>
+            
+      `  
+      
+}
+
+btnNext.addEventListener('click', ()=> {
+   return currentStep++  
+})
+
+const renderIndicator = (currentStep) => {
+   return quizIndicator.innerHTML= `
+   ${currentStep}/${DATA.length}
+`
+   
+}
+
+renderQustion(0)
+
