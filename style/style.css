@@ -806,7 +806,7 @@ a {
    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.4);
    color: white;
 }
-.quiz_qustions_li{
+.quiz_qustions_li,.quiz_qustions_lis{
    list-style: none;
    line-height: 40px;
    border: 1px solid;
@@ -861,4 +861,24 @@ a {
 .block{
    pointer-events: none;
    background-color: grey;
+}
+
+.quiz_results{
+   display: none;
+
+}
+.spann{
+   font-size: 22px;
+   font-weight: 900;
+}
+
+.answer_invalid{
+   background-color: rgba(255, 0, 0, 0.74);
+}
+.answer_valid{
+   background-color: rgba(0, 128, 0, 0.747);
+}
+
+.text_result{
+   padding: 50px 20px;
 }
