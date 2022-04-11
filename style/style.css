@@ -858,3 +858,7 @@ a {
    padding: 15px;
 }
 
+.block{
+   pointer-events: none;
+   background-color: grey;
+}

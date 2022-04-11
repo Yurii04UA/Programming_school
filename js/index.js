@@ -187,6 +187,8 @@ const quizControls= document.querySelector('.quiz_controls');
 const btnNext = document.querySelector('.btn_next');
 const quizResults= document.querySelector('.quiz_results');
 
+const quiz = document.querySelector('.quiz_question_box')
+
 let results ={};
 let currentStep = 0
 
@@ -213,9 +215,6 @@ const renderQustion = (index) => {
       
 }
 
-btnNext.addEventListener('click', ()=> {
-   return currentStep++  
-})
 
 const renderIndicator = (currentStep) => {
    return quizIndicator.innerHTML= `
@@ -223,6 +222,31 @@ const renderIndicator = (currentStep) => {
 `
    
 }
+
+quiz.addEventListener("change", (event) => {
+   // logic answers
+      if (event.target.classList.contains("quiz_qustions_input")){
+         results[event.target.name] = event.target.value
+         btnNext.classList.remove('block')
+         console.log(results);
+      }
+   });
+
+quiz.addEventListener('click',(event) => {
+      if(event.target.classList.contains("btn_next")){
+         
+      const questionIndex = (+quizQustions.dataset.currentStep+1)
+       
+         if(DATA.length===questionIndex){
+         // result
+         console.log('asd');
+         } else {
+            renderQustion(questionIndex)
+         }
+         btnNext.classList.add('block')
+      }
+})
+
 
 renderQustion(0)
 
