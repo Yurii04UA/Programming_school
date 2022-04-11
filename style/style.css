@@ -80,6 +80,8 @@ a {
    padding: 15px 25px;
    color: #fff;
    transition: all 0.4s;
+
+   box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover {
@@ -793,7 +795,7 @@ a {
 
 /* modal quiz */
 
-.quiz_question_box{
+.quiz_question_box,.quiz_results{
    max-width: 700px;
    width: 100%;
    margin: 0 auto;
@@ -808,11 +810,20 @@ a {
    list-style: none;
    line-height: 40px;
    border: 1px solid;
+   border-radius: 10px;
    padding: 0 15px;
-   
+   margin-bottom: 10px;
+
+   box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.2);
 }
+.quiz_qustions_li:not(:last-child){
+   margin-bottom: 10px;
+}
+
 .quiz_qustions_label{
   display:block;
+  line-height: 20px;
+  padding: 10px;
 }
 
 
@@ -825,4 +836,13 @@ a {
 }
 .btn_next, .btn_restart{
    border: none;
+   
+}
+
+.quiz_qustions_item_qustion{
+   padding: 10px;
+}
+
+.quiz_indicator{
+   padding: 15px;
 }
