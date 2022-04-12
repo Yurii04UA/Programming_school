@@ -873,10 +873,10 @@ a {
 }
 
 .answer_invalid{
-   background-color: rgba(255, 0, 0, 0.74);
+   background-color: rgba(255, 0, 0, 0.6);
 }
 .answer_valid{
-   background-color: rgba(0, 128, 0, 0.747);
+   background-color: rgba(0, 128, 0, 0.6);
 }
 
 .text_result{

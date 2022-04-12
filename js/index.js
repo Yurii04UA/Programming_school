@@ -185,7 +185,10 @@ const quizWrapper = document.querySelector(".quiz_wrapper");
 const quiz = document.querySelector(".quiz_question_box");
 
 let results = {};
+
 let currentStep = 0;
+console.log(results);
+
 
 const renderQustion = (index) => {
   renderIndicator(index + 1);
@@ -215,11 +218,11 @@ const renderIndicator = (currentStep) => {
    ${currentStep}/${DATA.length}
 `);
 };
-
+let validNumb = 0
 const renderResult = () => {
-   let valid = 0
+   
    content = `<div class="text_result"> <p>Good job.
-      Your score is <span class="spann">${valid}/${DATA.length}</span>.
+      Your score is <span class="spann">${validNumb}/${DATA.length}</span>.
       But I'm sure you'll learn a lot more in our course.</p></div>`;
 
 
@@ -228,18 +231,12 @@ const renderResult = () => {
 
    if( !answer.correct && answer.id === results[quIndex]){
      className = 'answer_invalid'
-     valid++
    }else if(answer.correct){
-      
-     className = 'answer_valid'    
-    
+     className = 'answer_valid'   
    }
 
    return className
-
  }
-
-
 
   const getAnswers = (questionIndex) =>
     DATA[questionIndex].answer
@@ -275,7 +272,23 @@ quiz.addEventListener("click", (event) => {
       quizWrapper.style = "display:none";
       quizResults.style = "display:block";
       document.querySelector('.quiz').style = 'padding-top: 50px'
-      console.log(results);
+      let resultsValue = Object.values(results)
+      console.log(resultsValue);
+      
+      for(let i = 0; i < validAnswers.length; i++){
+        if(validAnswers[i]===resultsValue[i]){
+          validNumb++
+          console.log(validNumb);
+        }
+      }
+
+// 
+
+
+
+      document.querySelector('.text_result').innerHTML = `<p>Good job.
+      Your score is <span class="spann">${validNumb}/${DATA.length}</span>.
+      But I'm sure you'll learn a lot more in our course.</p>`
     } else {
       renderQustion(questionIndex);
     }
@@ -284,3 +297,48 @@ quiz.addEventListener("click", (event) => {
 });
 
 renderQustion(0);
+
+/// valid answers
+const cloneDATA = [...DATA]
+
+let valid =[]
+cloneDATA.map(elem => {
+  valid.push(...elem.answer)
+  
+})
+const validAnswers = valid.filter(elem => elem.correct).map(elem => elem.id)
+console.log(validAnswers);
+
+
+
+ 
+
+// const a = {
+//   0: '2',
+//   1: '7',
+//   2: '11',
+//   3: '15',
+//   4: '19'
+//   } 
+
+//  const b = {
+//    0: '2',
+//    1: '8',
+//    2: '12',
+//    3: '16',
+//    4: '18'
+// }
+
+
+// const aValue = Object.values(a)
+// const bValue = Object.values(b)
+// // console.log(aValue);
+// // console.log(bValue.length);
+// let count = 0
+// for(let i=0; i<bValue.length; i++){
+//   if(aValue[i]===bValue[i]){
+//     count++
+//     console.log(count);
+//   }
+  
+// }
