@@ -433,9 +433,15 @@ a {
    justify-content: space-between;
    align-items: center;
 }
+.btn_learning{
+   margin: 0 auto;
+   margin-bottom: 20px;
+   background-color: #F15525;
 
+}
 .learning_process_btn_text{
    max-width: 280px;
+   margin-left: 15px;
 }
 
 
@@ -645,7 +651,7 @@ a {
 }
 
 
-.close{
+.close,.close_result{
    display: block;
    text-align: end;
    font-size: 32px;
@@ -880,5 +886,6 @@ a {
 }
 
 .text_result{
-   padding: 50px 20px;
+   padding: 30px 20px;
 }
+

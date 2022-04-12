@@ -183,6 +183,9 @@ const btnNext = document.querySelector(".btn_next");
 const quizResults = document.querySelector(".quiz_results");
 const quizWrapper = document.querySelector(".quiz_wrapper");
 const quiz = document.querySelector(".quiz_question_box");
+const closeResult = document.querySelector('.close_result')
+
+
 
 let results = {};
 
@@ -223,7 +226,10 @@ const renderResult = () => {
    
    content = `<div class="text_result"> <p>Good job.
       Your score is <span class="spann">${validNumb}/${DATA.length}</span>.
-      But I'm sure you'll learn a lot more in our course.</p></div>`;
+      But I'm sure you'll learn a lot more in our course.</p></div>
+      <a href="#" id="login" class="btn btn_test btn_learning">Start learning
+        <img src="./images/arrow.png" alt="arrow" class="arrow">
+      </a>`;
 
 
   const getClassName = (answer,quIndex) =>{
@@ -245,10 +251,11 @@ const renderResult = () => {
 
   DATA.forEach((question, index) => {
     content += `
-      <div class="quiz_qustions_item">
-         <div class="quiz_qustions_item_qustion">${question.question}</div>
-         <ul>${getAnswers(index)}</ul>
-      </div>`;
+    <div class="quiz_qustions_item">
+      <div class="quiz_qustions_item_qustion">${question.question}</div>
+      <ul>${getAnswers(index)}</ul>
+    </div>`
+      
   });
 
   quizResults.innerHTML = content + ``
@@ -273,7 +280,7 @@ quiz.addEventListener("click", (event) => {
       quizResults.style = "display:block";
       document.querySelector('.quiz').style = 'padding-top: 50px'
       let resultsValue = Object.values(results)
-      console.log(resultsValue);
+      
       
       for(let i = 0; i < validAnswers.length; i++){
         if(validAnswers[i]===resultsValue[i]){
@@ -282,11 +289,8 @@ quiz.addEventListener("click", (event) => {
         }
       }
 
-// 
-
-
-
-      document.querySelector('.text_result').innerHTML = `<p>Good job.
+      document.querySelector('.text_result').innerHTML = `
+      <p>Good job.
       Your score is <span class="spann">${validNumb}/${DATA.length}</span>.
       But I'm sure you'll learn a lot more in our course.</p>`
     } else {
@@ -295,6 +299,17 @@ quiz.addEventListener("click", (event) => {
     btnNext.classList.add("block");
   }
 });
+
+closeResult.addEventListener('click',()=> {
+  results={}
+  document.querySelector('.text_result').innerHTML = ``
+  content = ``
+  quizWrapper.style = "display:block";
+  quizResults.style = "display:none";
+  validNumb=0
+  renderQustion(0);
+})
+
 
 renderQustion(0);
 
@@ -309,36 +324,3 @@ cloneDATA.map(elem => {
 const validAnswers = valid.filter(elem => elem.correct).map(elem => elem.id)
 console.log(validAnswers);
 
-
-
- 
-
-// const a = {
-//   0: '2',
-//   1: '7',
-//   2: '11',
-//   3: '15',
-//   4: '19'
-//   } 
-
-//  const b = {
-//    0: '2',
-//    1: '8',
-//    2: '12',
-//    3: '16',
-//    4: '18'
-// }
-
-
-// const aValue = Object.values(a)
-// const bValue = Object.values(b)
-// // console.log(aValue);
-// // console.log(bValue.length);
-// let count = 0
-// for(let i=0; i<bValue.length; i++){
-//   if(aValue[i]===bValue[i]){
-//     count++
-//     console.log(count);
-//   }
-  
-// }

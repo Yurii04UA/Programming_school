@@ -13,7 +13,7 @@
    <title>Programming academy</title>
 </head>
 
-<body class="over hidden">
+<body class="over">
    <div class="wrapper">
       <header class="header container">
          <nav class="header_nav">
@@ -108,24 +108,25 @@
             </div>
          </div>
          <!-- quiz -->
-         <div class="quiz show_modal">
+         <div class="quiz">
+            <a href="#" class="close close_result">X</a>
             <div class="quiz_wrapper">
                <div class="quiz_question_box">
-                  <div class="quiz_qustions">
-                     <div class="quiz_qustions_item">
+                     <div class="quiz_qustions">
+                        <div class="quiz_qustions_item">
+                        </div>
+                        
                      </div>
+                     <div class="quiz_indicator"></div>
                      
-                  </div>
-                  <div class="quiz_indicator"></div>
-                  
-                  <div class="quiz_controls">
-                     <button href="#" class="btn btn_next block"  >Next question ></button>
-   
-                  </div>
+                     <div class="quiz_controls">
+                        <button href="#" class="btn btn_next block"  >Next question ></button>
+      
+                     </div>
                </div>
             </div>
             <div class="quiz_results">
-               
+               <a href="#" class="close">X</a>
                <div class="quiz_results_answers"></div>
                <div class="quiz_indicator_total"></div>
                <div class="quiz_controls">
@@ -316,8 +317,8 @@
          </div>
          <div class="learning_process_btn">
             <div class="btn_box">
-               <a href="#" class="btn btn_test">
-                  pass the test
+               <a href="#" class="btn btn_test" id="login">
+                  Start learning
                   <img src="./images/arrow.png" alt="arrow" class="arrow">
                </a>
                <p class="learning_process_btn_text">
@@ -449,8 +450,8 @@
             <div class="price_info_text">
                All sections are passed strictly in order. You cannot skip a block or start learning from the middle, even if you think that you already know some part of the material. Only in this way can we guarantee that you will receive all the knowledge provided by the curriculum.
             </div>
-            <a href="#" class="btn btn_test">
-               pass the test
+            <a href="#" class="btn btn_test" id="login">
+               Start learning
                <img src="./images/arrow.png" alt="arrow" class="arrow">
             </a>
          </div>
