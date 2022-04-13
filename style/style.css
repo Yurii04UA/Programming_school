@@ -256,10 +256,7 @@ a {
    margin-bottom: 30px;
 }
 
-.technologies_img {
-   display: flex;
 
-}
 
 /* .technologies_img_item{
    width: 100%;
@@ -889,3 +886,98 @@ a {
    padding: 30px 20px;
 }
 
+
+/* /// Media queries */
+@media screen and (max-width: 1300px){
+   .technologies_text{
+      margin-bottom: 50px;
+   }
+   .technologies{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+   }
+
+
+}
+
+
+
+@media screen and (max-width: 1120px){
+   .logo{
+      margin-right: 10px;
+   }
+   .nav_list_item_link{
+      padding: 5px 0;
+   }
+   .nav_left{
+      margin-right: 15px;
+   }
+   .circle,.process_info_help_img,.process_info_methods_img,.technologies_img,.arrow_hid{
+      display: none;
+   }
+  
+   .technologies{
+      display: block;
+      margin: 0;
+   }
+   .technologies_text{
+      max-width: 100%;
+   }
+   .price_info_text{
+      max-width: 400px;
+   }
+   .price_info a{
+      max-width: 200px;
+      padding: 10px;
+      font-size: 16px;
+      line-height: 16px;
+      text-align: center;
+   }
+   .price_info{
+      column-gap: 10px;
+   }
+   .wrapper{
+      border-radius: 0px;
+   }
+ 
+}
+@media screen and (max-width: 970px){
+   .nav_list_hidden{
+      display: none;
+   }
+   .footer_box{
+      column-gap: 25px;
+   }
+   .technologies_content{
+      padding: 40px;
+   }
+   .technologies_text{
+      margin-bottom: 0;
+   }
+   .container{
+      padding: 20px 60px;
+   }
+   .video_player_item{
+      max-width: 100%;
+   }
+}
+
+@media screen and (max-width: 770px){
+   .container{
+      padding: 20px 40px;
+   }
+
+   .learn_cards_item{
+      max-width: 200px;
+      padding: 10px;
+      padding-top: 15px;
+      font-size: 14px;
+   }
+   .learn_cards_item:last-child{
+      max-width: 100%;
+   }
+   .learn_cards{
+      column-gap: 10px;
+   }
+}
