@@ -980,4 +980,41 @@ a {
    .learn_cards{
       column-gap: 10px;
    }
+   .info_box{
+      flex-direction: column;
+      padding-top: 0;
+   }
+   .info_left{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+   }
+   .info_title{
+      text-align: center;
+   }
+
+   .learning_process_cards_item,.price_header_box_item,.learning_process_cards{
+      flex-direction: column;
+   }
+   .learning_process_cards_item:not(:first-child){
+      border-top: 1px solid rgba(128, 128, 128, 0.247);
+   }
+   .price_header_img{
+      margin-bottom: 10px;
+   }
+   .technologies_section {
+      margin-top: 40px;
+      margin-bottom: 40px;
+   }
+   .price_info_img,.footer_box_main{
+      display: none;
+   }
+   .process_info_help_img_text, .process_info_methods_img_text{
+      padding: 40px;
+   }
+}
+
+@media screen and (max-width: 770px){
+   
 }
