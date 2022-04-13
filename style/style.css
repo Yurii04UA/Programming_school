@@ -989,18 +989,19 @@ a {
       flex-direction: column;
       align-items: center;
       margin-bottom: 40px;
+      width: 100%;
    }
    .info_title{
       text-align: center;
    }
 
-   .learning_process_cards_item,.price_header_box_item,.learning_process_cards{
+   .learning_process_cards_item,.price_header_box_item,.learning_process_cards,.price_info{
       flex-direction: column;
    }
    .learning_process_cards_item:not(:first-child){
       border-top: 1px solid rgba(128, 128, 128, 0.247);
    }
-   .price_header_img{
+   .price_header_img,.price_info_text{
       margin-bottom: 10px;
    }
    .technologies_section {
@@ -1015,6 +1016,86 @@ a {
    }
 }
 
-@media screen and (max-width: 770px){
-   
+@media screen and (max-width: 550px){
+   .footer_logo{
+      flex-direction: column;
+
+   }
+   .footer_logo p{
+      text-align: center;
+      
+   }
+   .footer_box{
+      grid-template-columns:1fr 1fr;
+      column-gap: 5px;
+      font-size: 14px;
+   }
+   .prices_box{
+      font-size: 14px;
+      padding: 15px;
+   }
+   .prices_block p{
+      padding: 5px;
+   }
+   .process_info_help_img_text, .process_info_methods_img_text{
+      padding: 15px;
+   }
+   .process_info_methods,.process_info_help{
+      max-height: 415px;
+   }
+   .price_header_box{
+      flex-direction: column;
+   }
+   .price_header_box_item:not(:last-child){
+      margin-bottom: 10px;
+   }
+   .btn_box{
+      flex-direction: column-reverse;
+   }
+   .learning_process_btn_text{
+      margin-bottom: 15px;
+   }
+   .process_numb{
+      font-size: 60px;
+   }
+   .container{
+      padding: 20px 20px;
+   }
+}
+
+@media screen and (max-width: 500px){
+   .learn_cards_item{
+      max-width: 100%;
+   }
+   .technologies{
+      display: flex;
+   }
+}
+@media screen and (max-width: 450px){
+   .btn_box{
+      border-radius: 10px;
+   }
+   .reg{
+      display: none;
+   }
+}
+
+@media screen and (max-width: 375px){
+   .footer_box{
+      display: flex;
+      flex-direction: column;
+   }
+   .footer_box_right{
+      margin-top: 10px;
+      text-align: center;
+   }
+   .logo{
+      margin-right: 0;
+   }
+   .prices_block:first-child,.prices_block:last-child,.prices_box{
+      font-size: 12px;
+   }
+   .price_info{
+      padding: 15px;
+   }
 }
