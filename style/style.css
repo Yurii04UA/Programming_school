@@ -1042,8 +1042,11 @@ a {
    .price_info_img,.footer_box_main{
       display: none;
    }
-   .process_info_help_img_text, .process_info_methods_img_text{
+   .process_info_help_img_text, .process_info_methods_img_text,.quiz{
       padding: 40px;
+   }
+   .quiz_question_box, .quiz_results{
+      padding: 10px;
    }
 }
 
@@ -1096,6 +1099,7 @@ a {
       padding: 10px;
       padding-top: 50px;
    }
+   
 }
 
 @media screen and (max-width: 500px){
@@ -1107,6 +1111,12 @@ a {
    }
    .info_title{
       font-size: 28px;
+   }
+   .quiz{
+      padding: 15px;
+   }
+   .quiz_question_box,.quiz_results{
+      font-size: 14px;
    }
 }
 @media screen and (max-width: 450px){
