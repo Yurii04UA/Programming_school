@@ -618,11 +618,19 @@ a {
    z-index: 2;
    border-radius: 25px;
 
-   transform: translateX(150%);
+   -webkit-transform: translateX(150%);
+
+       -ms-transform: translateX(150%);
+
+           transform: translateX(150%);
+   -webkit-transition: all 0.3s ease-in;
+   -o-transition: all 0.3s ease-in;
    transition: all 0.3s ease-in;
    opacity: 0;
    
-   backdrop-filter: blur(25px);
+   -webkit-backdrop-filter: blur(25px);
+   
+           backdrop-filter: blur(25px);
 
 
 }
@@ -1069,6 +1077,9 @@ a {
    }
    .technologies{
       display: flex;
+   }
+   .info_title{
+      font-size: 28px;
    }
 }
 @media screen and (max-width: 450px){
