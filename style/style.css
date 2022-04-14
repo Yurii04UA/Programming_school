@@ -635,8 +635,9 @@ a {
 
 }
 .over.hidden{
+   position: relative;
    overflow: hidden;
-
+   height: 100%;
 }
 
 .login.show_modal{
