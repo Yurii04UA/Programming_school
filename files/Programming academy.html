@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/index.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   
+   
+   
+   <title>Programming academy</title>
+<link rel="stylesheet" href="./Programming academy_files/style.css"><link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><link href="./Programming academy_files/css2" rel="stylesheet"></head>
+
+<body class="over">
+   <div class="wrapper">
+      <header class="header container">
+         <nav class="header_nav">
+            <div class="nav_left">
+               <img src="./Programming academy_files/PyPt.png" alt="logo" class="logo">
+               <ul class="nav_list nav_list_hidden">
+                  <li class="nav_list_item">
+                     <a href="http://127.0.0.1:5500/index.html#learn" class="nav_list_item_link">What will you learn</a>
+                  </li>
+                  <li class="nav_list_item">
+                     <a href="http://127.0.0.1:5500/index.html#process" class="nav_list_item_link">Learing process</a>
+                  </li>
+                  <li class="nav_list_item">
+                     <a href="http://127.0.0.1:5500/index.html#cost" class="nav_list_item_link">Cost of education</a>
+                  </li>
+                  <li class="nav_list_item">
+                     <a href="http://127.0.0.1:5500/index.html#contacts" class="nav_list_item_link">Contacts</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="nav_right">
+               <ul class="nav_list">
+                  <a href="http://127.0.0.1:5500/index.html#" class="nav_list_item_link link_mar" id="login">
+                     <li class="nav_list_item">
+                        <img src="./Programming academy_files/sign_in.png" alt="icon" class="item_icon">
+                        <p>Sign in</p>
+                     </li>
+                  </a>
+                  <a href="http://127.0.0.1:5500/index.html#" class="nav_list_item_link reg" id="registration">
+                     <li class="nav_list_item">
+                        <img src="./Programming academy_files/registration.png" alt="icon" class="item_icon">
+                        <p>Registration</p>
+                     </li>
+                  </a>
+               </ul>
+            </div>
+         </nav>
+      </header>
+      <!-- <Modal windows> -->
+         <!-- login -->
+         <div class="login">
+            <a href="http://127.0.0.1:5500/index.html#" class="close">X</a>
+            <div class="login_box">
+               <h1>Hello</h1>
+               <p>Sign in to PyPt or <a class="reg reg_modal" href="http://127.0.0.1:5500/index.html#" id="registration">create an account</a></p>
+               <form action="http://127.0.0.1:5500/index.html#">
+                  <input type="text" placeholder="Email or username">
+                  <input type="password" placeholder="Your password">
+               </form>
+               <a href="http://127.0.0.1:5500/index.html#" class="btn_login">Continue</a>
+               <p class="or">or</p>
+               <a href="http://127.0.0.1:5500/index.html#" class="btn_connect">
+                  <img src="./Programming academy_files/fbReg.png" alt="icon_fb"> Continue with Facebook
+               </a>
+               <a href="http://127.0.0.1:5500/index.html#" class="btn_connect">
+                  <img src="./Programming academy_files/google.png" alt="icon_google"> Continue with Google
+               </a>
+               <div class="check">
+                  <input type="checkbox" id="checkbox" checked="">
+                  <label for="checkbox">Stay signed in</label>
+                  <p>Using a public or shared device? Uncheck to protect your account.</p>
+               </div>
+            </div>
+         </div>
+         <!-- /// Registration -->
+         <div class="registration">
+            <a href="http://127.0.0.1:5500/index.html#" class="close">X</a>
+            <h1>Create an account</h1>
+            <div class="reg_box">
+               <div class="reg_box_left">
+                  <form action="http://127.0.0.1:5500/index.html#">
+                     <div class="name">
+                        <input type="text" placeholder="First name">
+                        <input type="text" placeholder="Last name">
+                     </div>
+                     <input type="email" placeholder="Password">
+                     <input type="password" placeholder="Email">
+                  </form>
+                  <p><span class="create">By Creating an account</span>, you agree to our <a href="http://127.0.0.1:5500/index.html#" class="link">User Agreement</a> and acknowledge reading our <a href="http://127.0.0.1:5500/index.html#" class="link">User Privacy Notice</a>.</p>
+                  <div class="btn_login">Create account </div>
+               </div>
+               
+               <p>or</p>
+               <div class="reg_box_right" style="">
+                  <a href="http://127.0.0.1:5500/index.html#" class="btn_connect">
+                     <img src="./Programming academy_files/fbReg.png" alt="icon_fb"> Continue with Facebook
+                  </a>
+                  <a href="http://127.0.0.1:5500/index.html#" class="btn_connect">
+                     <img src="./Programming academy_files/google.png" alt="icon_google"> Continue with Google
+                  </a>
+               </div>
+            </div>
+         </div>
+         <!-- quiz -->
+         <div class="quiz">
+            <a href="http://127.0.0.1:5500/index.html#" class="close close_result">X</a>
+            <div class="quiz_wrapper">
+               <div class="quiz_question_box">
+                     <div class="quiz_qustions" data-current-step="0">
+                        <div class="quiz_qustions_item">
+         <div class="quiz_qustions_item_qustion">What does PHP stand for?</div>
+         <ul><li class="quiz_qustions_li">
+            <label class="quiz_qustions_label">
+               <input class="quiz_qustions_input" type="radio" name="0" value="1">Personal Hypertext Processor</label>
+            </li><li class="quiz_qustions_li">
+            <label class="quiz_qustions_label">
+               <input class="quiz_qustions_input" type="radio" name="0" value="2">Private Home Page</label>
+            </li><li class="quiz_qustions_li">
+            <label class="quiz_qustions_label">
+               <input class="quiz_qustions_input" type="radio" name="0" value="3">PHP: Hypertext Preprocessor  </label>
+            </li><li class="quiz_qustions_li">
+            <label class="quiz_qustions_label">
+               <input class="quiz_qustions_input" type="radio" name="0" value="4">Personal Hype Preprocessor </label>
+            </li></ul>
+            
+      </div>
+                        
+                     </div>
+                     <div class="quiz_indicator">
+   1/5
+</div>
+                     
+                     <div class="quiz_controls">
+                        <button href="#" class="btn btn_next block">Next question &gt;</button>
+      
+                     </div>
+               </div>
+            </div>
+            <div class="quiz_results">
+               <a href="http://127.0.0.1:5500/index.html#" class="close">X</a>
+               <div class="quiz_results_answers"></div>
+               <div class="quiz_indicator_total"></div>
+               <div class="quiz_controls">
+                  <button href="#" class="btn btn_restart">Restart quiz</button>
+               </div>
+            </div>
+         </div>
+      <!-- </Modal windows> -->
+      <section class="info_section container">
+         <div class="info_box">
+            <div class="info_left">
+               <h1 class="info_title">
+                  Programming <br class="br">
+                   <span class="academy">{</span> academy <span class="academy">}</span> for those who need
+                  real
+                  skills, not just a certificate
+               </h1>
+               <p class="info_text">
+                  Take the test to get access to free introductory lessons
+               </p>
+               <a href="http://127.0.0.1:5500/index.html#" class="btn btn_test">
+                  pass the test
+                  <img src="./Programming academy_files/arrow.png" alt="arrow" class="arrow">
+               </a>
+            </div>
+            <div class="info_right">
+               <img src="./Programming academy_files/info_section_img.png" alt="images" class="info_section_img">
+            </div>
+         </div>
+         <div class="circle">
+            <img src="./Programming academy_files/arrow_down.png" alt="arrow" class="arrow_down">
+         </div>
+
+      </section>
+   </div>
+   <section class="technologies_section container" id="learn">
+      <h2 class="technologies_title">
+         What programming technologies will you learn?
+
+      </h2>
+
+      <div class="technologies_content">
+         <div class="technologies_img">
+            <img src="./Programming academy_files/technologies_img.png" alt="images" class="technologies_img_item">
+         </div>
+         <div class="technologies">
+            <span class="technologies_item b1">Python programming language</span>
+            <span class="technologies_item b2">Network programming</span>
+            <span class="technologies_item b3">Database</span>
+            <span class="technologies_item b4">Flask and Django frameworks</span>
+            <span class="technologies_item b5">Git</span>
+            <span class="technologies_item b6">Debugging and Testing</span>
+            <span class="technologies_item b7">Docker</span>
+            <span class="technologies_item b8">Docker mySql</span>
+
+            <p class="technologies_text">
+               This is a necessary minimum for a modern backend developer.
+            </p>
+         </div>
+      </div>
+   </section>
+   <section class="learn_section container" id="process">
+      <h2 class="learn_title">
+         Learning at PyPt is convenient and efficient
+      </h2>
+
+      <div class="learn_cards">
+         <!-- 1 -->
+         <div class="learn_cards_item">
+            <img src="./Programming academy_files/learn_icon1.png" alt="icon" class="learn_cards_img">
+            <h3 class="learn_cards_title">
+               Huge amount of practice</h3>
+            <p class="learn_card_text">
+               Over 500 independent tasks and 20 full-fledged large projects
+            </p>
+         </div>
+         <!-- 2 -->
+         <div class="learn_cards_item">
+            <img src="./Programming academy_files/learn_icon2.png" alt="icon" class="learn_cards_img">
+            <h3 class="learn_cards_title">
+               Modern teaching methods
+            </h3>
+            <p class="learn_card_text">
+               Spiral learning: we plunge into the material gradually, turn by turn
+            </p>
+         </div>
+         <!-- 3 -->
+         <div class="learn_cards_item">
+            <img src="./Programming academy_files/learn_icon3.png" alt="icon" class="learn_cards_img">
+            <h3 class="learn_cards_title">
+               Simple and understandable presentation
+            </h3>
+            <p class="learn_card_text">
+               Instead of abstruse terms - examples from the real world
+            </p>
+         </div>
+         <!-- 4 -->
+         <div class="learn_cards_item">
+            <img src="./Programming academy_files/learn_icon4.png" alt="icon" class="learn_cards_img">
+            <h3 class="learn_cards_title">
+               Flexible class schedule
+            </h3>
+            <p class="learn_card_text">
+               Learn at any time at your convenience tempeh for you
+            </p>
+         </div>
+         <!-- 5 -->
+         <div class="learn_cards_item">
+            <img src="./Programming academy_files/learn_icon5.png" alt="icon" class="learn_cards_img">
+            <h3 class="learn_cards_title">
+               Direct communication with experienced programmers
+            </h3>
+            <p class="learn_card_text">
+               Ask questions and submit your code for review
+            </p>
+         </div>
+         <!-- 6 -->
+         <div class="learn_cards_item">
+            <img src="./Programming academy_files/learn_icon6.png" alt="icon" class="learn_cards_img">
+            <h3 class="learn_cards_title">
+               Payment in small installments
+            </h3>
+            <p class="learn_card_text">
+               Pay only for the material that you are currently studying, and not for the whole course at once
+            </p>
+         </div>
+         <!-- 7 -->
+         <div class="learn_cards_item">
+            <img src="./Programming academy_files/learn_icon7.png" alt="icon" class="learn_cards_img">
+            <h3 class="learn_cards_title">
+               Quick and easy returns
+            </h3>
+            <p class="learn_card_text">
+               If you change your mind about studying we will refund the money in 3 working days
+            </p>
+         </div>
+      </div>
+
+   </section>
+   <div class="wrapper">
+      <div class="learning_process_section container">
+         <div class="learning_process_header">
+            <h2 class="learning_process_title">
+               How is training on PyPt?
+            </h2>
+            <p class="learning_process_text">
+               Learning should be comfortable. Therefore, we have developed our own platform for learning to program. On
+               it, you can not only study theory, but also run ready-made examples and even write your own code.
+            </p>
+            <div class="video_player">
+               <img src="./Programming academy_files/video_player.png" alt="video player" class="video_player_item">
+               <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="./Programming academy_files/play_btn.png" alt="button" class="btn_play"></a>
+            </div>
+         </div>
+         <div class="learning_process_cards">
+            <div class="learning_process_cards_item">
+               <p class="process_numb">01</p>
+               <h3 class="process_title">
+                  All material is divided into small lessons
+               </h3>
+               <p class="process_text">
+                  Theory and practice are served in small portions. This will make it easier for you to absorb new
+                  knowledge.
+               </p>
+            </div>
+            <!-- 2 -->
+            <div class="learning_process_cards_item">
+               <p class="process_numb">02</p>
+               <h3 class="process_title">
+                  Learning by doing
+               </h3>
+               <p class="process_text">
+                  Everything you learn, you immediately begin to put into practice. You immediately see the results of
+                  your work.
+               </p>
+            </div>
+            <!-- 3 -->
+            <div class="learning_process_cards_item">
+               <p class="process_numb">03</p>
+               <h3 class="process_title">
+                  No time limits
+               </h3>
+               <p class="process_text">
+                  You can combine study with work and other things. No need to beg for academic leave if you had to take
+                  a break.
+               </p>
+            </div>
+         </div>
+         <div class="learning_process_btn">
+            <div class="btn_box">
+               <a href="http://127.0.0.1:5500/index.html#" class="btn btn_test" id="login">
+                  Start learning
+                  <img src="./Programming academy_files/arrow.png" alt="arrow" class="arrow">
+               </a>
+               <p class="learning_process_btn_text">
+                  Try it, the first lessons are free, but you need to pass the test
+               </p>
+            </div>
+         </div>
+         
+      </div>
+   </div>
+   <div class="learning_process_info container">
+      <div class="process_info_help">
+         <div class="process_info_help_img">
+            <img src="./Programming academy_files/process_info_help_img.png" alt="images" class="process_info_help_item">
+         </div>
+         <div class="process_info_help_img_text">
+            <h3 class="help_title">
+               Help and support
+            </h3>
+            <p class="help_text">
+               If there are any difficulties during the learning process, you can always ask your mentor a question.
+            </p>
+            <p class="help_text">
+               Every few lessons you will receive a large task that you will need to submit to the code reviewer for verification. He will carefully study your code, find errors and help you improve.
+            </p>
+         </div>
+      </div>
+      <div class="process_info_methods">
+         <div class="process_info_methods_img_text">
+            <h3 class="methods_title">
+               Teaching methodology
+            </h3>
+         
+            <p class="methods_text">
+               All educational material is structured according to the principle of "spiral learning". First, you gain basic knowledge, and then, at each turn of the spiral, you delve into the topics studied, bringing their understanding to perfection. This approach simplifies learning and ensures that you don't miss anything important.
+            </p>
+         </div>
+         <div class="process_info_methods_img">
+            <img src="./Programming academy_files/process_info_methods_img.png" alt="images" class="process_info_methods_item">
+         </div>
+      </div>
+   </div>
+   <div class="wrapper">
+      <section class="price_section container" id="cost">
+         <div class="price_header">
+            <h2 class="price_header_title">
+               Cost of education
+            </h2>
+            <div class="price_header_box">
+               <!-- 1 -->
+               <div class="price_header_box_item">
+                  <img src="./Programming academy_files/learn_icon8.png" alt="icon" class="price_header_img">
+                  <p class="price_header_text">
+                     The entire course is divided into several blocks. Payment is phased, you pay only for the block that is currently going through.
+                  </p>
+               </div>
+               <!-- 2 -->
+               <div class="price_header_box_item">
+                  <img src="./Programming academy_files/learn_icon6.png" alt="icon" class="price_header_img">
+                  <p class="price_header_text">
+                     The entire course is divided into several blocks. Payment is phased, you pay only for the block that is currently going through.
+                  </p>
+               </div>
+               <!-- 3 -->
+               <div class="price_header_box_item">
+                  <img src="./Programming academy_files/learn_icon7.png" alt="icon" class="price_header_img">
+                  <p class="price_header_text">
+                     The entire course is divided into several blocks. Payment is phased, you pay only for the block that is currently going through.
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div class="price_main">
+            <div class="prices_box">
+               <div class="prices_block">
+                  <p>Section</p>
+                  <p>Price $</p>
+                  <p>Time of education (month)*</p>
+               </div>
+               <div class="prices_block">
+                  <p>Introduction to programming</p>
+                  <p>Free section</p>
+                  <p>0.5</p>
+               </div>
+               <div class="prices_block">
+                  <p>Python Programming Fundamentals</p>
+                  <p>100 $</p>
+                  <p>1</p>
+               </div>
+               <div class="prices_block">
+                  <p>Python, advanced level</p>
+                  <p>200 $</p>
+                  <p>2.5</p>
+               </div>
+               <div class="prices_block">
+                  <p>Networks + Flask Framework</p>
+                  <p>200 $</p>
+                  <p>2.5</p>
+               </div>
+               <div class="prices_block">
+                  <p>Database</p>
+                  <p>200 $</p>
+                  <p>2</p>
+               </div>
+               <div class="prices_block">
+                  <p>Django framework</p>
+                  <p>200 $</p>
+                  <p>2</p>
+               </div>
+               <div class="prices_block">
+                  <p>Development of your project</p>
+                  <p>100 $</p>
+                  <p>1.5</p>
+               </div>
+               <div class="prices_block">
+                  <p>Total</p>
+                  <p>1000 $</p>
+                  <p>12</p>
+               </div>
+            </div>
+            <p class="price_notes">
+               * based on 20 hours per week
+            </p>
+         </div>
+         <div class="price_info">
+            <div class="price_info_img">
+               <img src="./Programming academy_files/learn_icon9.png" alt="icon" class="price_info_img_item">
+            </div>
+            <div class="price_info_text">
+               All sections are passed strictly in order. You cannot skip a block or start learning from the middle, even if you think that you already know some part of the material. Only in this way can we guarantee that you will receive all the knowledge provided by the curriculum.
+            </div>
+            <a href="http://127.0.0.1:5500/index.html#" class="btn btn_test btn_test_media" id="login">
+               Start learning
+               <img src="./Programming academy_files/arrow.png" alt="arrow" class="arrow arrow_hid">
+            </a>
+         </div>
+      </section>
+      <footer class="footer container" id="contacts">
+         <div class="footer_box">
+            <div class="footer_box_left">
+               <div class="footer_logo">
+                  <img src="./Programming academy_files/PyPt.png" alt="" class="logo">
+                  <p>Programming academy</p>
+               </div>
+               <div class="footer_box_left_social">
+                  <a href="http://127.0.0.1:5500/index.html#">
+                     <img src="./Programming academy_files/fb.png" alt="facebook" hbmfs05u6="">
+                  </a>
+                  <a href="http://127.0.0.1:5500/index.html#">
+                     <img src="./Programming academy_files/inst.png" alt="intagram">
+                  </a>
+                  <a href="http://127.0.0.1:5500/index.html#">
+                     <img src="./Programming academy_files/youtube.png" alt="youtube">
+                  </a>
+                  <a href="http://127.0.0.1:5500/index.html#">
+                     <img src="./Programming academy_files/vk.png" alt="vk">
+                  </a>
+               </div>
+            </div>
+            <div class="footer_box_main">
+               <ul>
+                  <li> 
+                     <a href="http://127.0.0.1:5500/index.html#">What will you learn</a>
+                  </li>
+                  <li class="">
+                     <a href="http://127.0.0.1:5500/index.html#">Learing process</a>
+                  </li>
+                  <li class="">
+                     <a href="http://127.0.0.1:5500/index.html#">Cost of education</a>
+                  </li>
+                  <li>
+                     <a href="http://127.0.0.1:5500/index.html#">Contacts</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="footer_box_right">
+               <p>+800-27-27-00</p>
+               <p>company@pypt.com</p>
+               <p>18 Beulah Road, Norwoods SA 5061, USA.</p>
+            </div>
+         </div>
+         <div class="footer_col">
+            <p>
+               © 2022 PyPt 
+            </p>
+            <p>
+               Terms of use
+            </p>
+            <p>
+               Privacy Policy
+            </p>
+         </div>
+      </footer>
+   </div>
+   <script src="./Programming academy_files/index.js.Без названия"></script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
