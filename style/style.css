@@ -764,10 +764,14 @@ a {
    justify-content: center;
    align-items: center;
 }
-.reg_box_left,.reg_box_right{
+.reg_box_left{
    padding: 50px;
 }
-
+.reg_box_right{
+   margin-left: 50px;
+   max-width: 320px;
+   width: 100%;
+}
 .reg_box_left form{
    display: flex;
    flex-direction: column;
