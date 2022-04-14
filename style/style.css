@@ -722,7 +722,8 @@ a {
 }
 
 .btn_connect{
-   min-width: 320px;
+   max-width: 320px;
+   width: 100%;
    display: flex;
    align-items: center;
    
@@ -895,7 +896,9 @@ a {
    padding: 30px 20px;
 }
 
-
+.br{
+   display: none;
+}
 /* /// Media queries */
 @media screen and (max-width: 1300px){
    .technologies_text{
@@ -969,6 +972,16 @@ a {
    }
    .video_player_item{
       max-width: 100%;
+   }  
+   .br{
+      display: block;
+   }
+   .name input{
+      max-width: 100%;
+      width: 100%;
+   }
+   .registration{
+      padding: 40px;
    }
 }
 
@@ -976,7 +989,16 @@ a {
    .container{
       padding: 20px 40px;
    }
-
+   .reg_box_left,.reg_box_right{
+      padding: 15px 0;
+   }
+   .reg_box_right{
+      max-width: 320px;
+      width: 100%;
+   }
+   .reg_box{
+      flex-direction: column;
+   }
    .learn_cards_item{
       max-width: 200px;
       padding: 10px;
@@ -1070,6 +1092,10 @@ a {
    .container{
       padding: 20px 20px;
    }
+   .login,.registration{
+      padding: 10px;
+      padding-top: 50px;
+   }
 }
 
 @media screen and (max-width: 500px){
@@ -1089,6 +1115,9 @@ a {
    }
    .reg{
       display: none;
+   }
+   .reg_modal{
+      display: block;
    }
 }
 

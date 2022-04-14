@@ -21,7 +21,7 @@ btnLogin.addEventListener("click", () => {
 btnReg.forEach((e) => {
   e.addEventListener("click", () => {
     modalReg.classList.toggle("show_modal");
-    overflow.classList.toggle("hidden");
+    overflow.classList.add("hidden");
     document.querySelector(".circle").classList.toggle("show_modal");
   });
 });
